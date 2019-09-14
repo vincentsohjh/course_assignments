@@ -300,13 +300,3 @@ plt.register_cmap(name='turbo_r', cmap=cmap_reversed)
 
 
 
-if __name__=='__main__':
-
-    XX, YY = np.meshgrid(np.linspace(0,1,100), np.linspace(0,1,100))
-    ZZ = np.sqrt(XX**2 + YY**2)
-
-    plt.imshow(ZZ, cmap='turbo')
-    plt.colorbar()
-    plt.show()
-
-
